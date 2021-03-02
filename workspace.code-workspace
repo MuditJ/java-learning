@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"remoteAuthority": "wsl+ubuntu-20.04",
+	"settings": {
+		"maven.view": "hierarchical"
+	}
+}
