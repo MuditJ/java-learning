@@ -2,7 +2,7 @@ public class SubclassReferencing {
 
     public static void main(String[] args) {
      
-            //Referencing an object through the same type as the class of the object:
+            //Referencing an object through variable of the same type as the class of the object:
     Person p = new Person();
 
     //Referencing an object through the type of its superclass 
@@ -10,7 +10,7 @@ public class SubclassReferencing {
 
     System.out.println(p);
 
-    // For object e, since the reference type is of the super class, only those methods and fields can be accessed
+    // For object referredto via variable e, since the reference type is of the super class, only those methods and fields can be accessed
     //which are visible to the superclass:
 
     e.setName("Mudit");
@@ -84,6 +84,7 @@ class Employee extends Person {
     }
 
     public String toString() {
+        System.out.println("Method called in employee class");
         return super.toString() + " salary: " + salary;
     }
 }
